@@ -1,0 +1,92 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+name: "Anay Kamat's Weblog"
+title: Anay Kamat's Weblog
+email: admin@anaykamat.com
+description: >
+  Blog to share my thoughts and ideas on Technology, Programming, and Career
+baseurl:  # the subpath of your site, e.g. /blog
+url: http://anaykamat.com # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: kamatanay
+github_username:  kamatanay
+
+# Build settings
+markdown: kramdown
+theme: alembic-jekyll-theme
+plugins:
+  - jekyll-sitemap
+  - jekyll-mentions
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-redirect-from
+  - jekyll-default-layout
+  - jekyll-feed
+  - jekyll-commonmark
+  - jekyll-include-cache
+  - jemoji
+highlighter: rouge
+paginate: 10
+paginate_path: "/page:num/"
+disqus: anay-kamats-weblog
+jekyll-mentions: https://twitter.com
+twitter:
+  username: kamatanay
+author: kamatanay
+social: #
+  name: Anay Kamat
+  links:
+    - https://twitter.com/kamatanay
+    - https://www.facebook.com/kamatanay
+    - https://www.linkedin.com/in/anaykamat
+    - https://github.com/kamatanay
+
+# sass:
+#   style: compressed # Style compression
+permalink: pretty  # Permalink style (/YYYY/MM/DD/page-name/)
+excerpt_separator: <!-- more --> # Marks end of excerpt in posts
+timezone: Asia/Kolkata # Timezone for blog posts and alike
+
+social_links: # Appears in sidebar. Set the urls then uncomment and comment out as desired
+  Twitter: https://twitter.com/kamatanay
+  LinkedIn: https://www.linkedin.com/in/anaykamat
+  GitHub: https://github.com/kamatanay
+  link: https://anaykamat.com
+  RSS: /feed.xml
+
+
+
+navigation_header:
+- title: Home
+  url: /
+- title: About Myself
+  url: /about-2
+
+sharing_links: # Appear at the bottom of single blog posts, add as desired. The value can be 'true' or the desired button colour
+  Twitter: "#0d94e7"
+  facebook: "#3B5998"
+  Email: true
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
