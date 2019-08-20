@@ -34,6 +34,8 @@ plugins:
   - jekyll-redirect-from
   - jekyll-default-layout
   - jekyll-feed
+  - jekyll-commonmark
+  - jekyll-include-cache
   - jemoji
 highlighter: rouge
 paginate: 10
@@ -67,11 +69,13 @@ social_links: # Appears in sidebar. Set the urls then uncomment and comment out 
 
 
 navigation_header:
-  Home: "/"
-  About Myself: "/about-2"
+- title: Home
+  url: /
+- title: About Myself
+  url: /about-2
 
 sharing_links: # Appear at the bottom of single blog posts, add as desired. The value can be 'true' or the desired button colour
-  Twitter: "#1DA1F2"
+  Twitter: "#0d94e7"
   facebook: "#3B5998"
   Email: true
 
