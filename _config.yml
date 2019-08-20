@@ -25,7 +25,7 @@ github_username:  kamatanay
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-architect
+theme: alembic-jekyll-theme
 plugins:
   - jekyll-sitemap
   - jekyll-mentions
